@@ -4,18 +4,16 @@ import org.junit.Test;
 
 import java.util.Map;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by karim on 12/16/2016.
  */
-public class DirectedGraphTest {
+public class DirectTripsGraphTest {
 
-    DirectedGraph directedGraph=new DirectedGraph();
+    DirectTripsGraph directTripsGraph =new DirectTripsGraph();
     @Test
     public void testReadInputData() throws Exception {
 
-        Map<String,Map<String,Integer>> directTripGraphMap= directedGraph.readInputData();
+        Map<String,Map<String,Integer>> directTripGraphMap= directTripsGraph.readInputData();
         System.out.println(directTripGraphMap);
     }
 }

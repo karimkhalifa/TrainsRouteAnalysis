@@ -9,12 +9,7 @@ import java.util.Map;
 /**
  * Created by karim on 12/16/2016.
  */
-public class DirectedGraph {
-
-    //InputFile Path $$$$$$$$$$$$
-
-
-
+public class DirectTripsGraph {
 
 
     public void DirectedGraph()
