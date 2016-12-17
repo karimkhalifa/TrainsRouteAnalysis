@@ -17,7 +17,8 @@ public class RouteAnalysisTest {
             e.printStackTrace();
         }
     }
-    @Test
+
+    @Test //Unit Testing For get distance of the Route
     public void testGetRouteDistance() throws Exception {
         String [] routePoints_1={"A", "B", "C"};
         Integer totalDistance_1=routeAnalysis.getRouteDistance(routePoints_1);
@@ -56,20 +57,23 @@ public class RouteAnalysisTest {
             System.out.println("NO SUCH ROUTE");
 
 
-        System.out.println("");
     }
 
 
-    @Test
+    @Test //Unit Testing for calculating the number of trips constrained by number of stops
     public void testGetTripCountByStopLimit() throws Exception {
         System.out.println(" Num of Trips by Stop: "+ routeAnalysis.getTripCountByStopLimit("C","C",3, Inequality.LESS_THAN_OR_EQUAL));
         System.out.println(" Num of Trips by Stop: "+ routeAnalysis.getTripCountByStopLimit("A","C",4, Inequality.EXACT_EQUAL));
     }
 
+    @Test //Unit Testing for calculating the length of the shortest path
+    public void testGetShortestRouteDistance() throws Exception {
+        System.out.println(" Shortest Distance: "+ routeAnalysis.getShortestRouteDistance("B","B"));
+        System.out.println(" Shortest Distance: "+ routeAnalysis.getShortestRouteDistance("A","C"));
+    }
 
-
-    @Test
+    @Test //Unit Testing for calculating the number of trips constrained by number of stops
     public void testGetTripCountByDistanceLimit() throws Exception {
-        System.out.println(" Num of Trips by Distance: "+ routeAnalysis.getTripCountByDistanceLimit("C","C",30));
+        System.out.println(" Num of Trips by Distance: "+ routeAnalysis.getTripCountByDistanceLimit("B","B",30));
     }
 }
