@@ -5,7 +5,7 @@ import com.google.common.base.Joiner;
 
 
 import java.text.MessageFormat;
-
+//Enum Description: This enum is mainly used for setting the inequality operator using within the code
 public enum Inequality  {
 
     LESS_THAN_OR_EQUAL("less-than-or-equal"),

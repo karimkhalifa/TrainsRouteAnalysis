@@ -2,7 +2,7 @@ package BusinessTier.Exceptions;
 
 import java.text.MessageFormat;
 
-
+//Class Description: This Class using for handling System Exceptions
 public class SystemException extends RuntimeException {
 
     private static final long serialVersionUID = 8012755528143879802L;
