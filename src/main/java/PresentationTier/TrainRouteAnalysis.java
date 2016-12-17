@@ -6,12 +6,12 @@ import java.io.IOException;
 
 
 public class TrainRouteAnalysis {
-//    public static void main(String [] args) throws IOException {
-//
+    public static void main(String [] args) throws IOException {
+
 //        RouteAnalysis routeAnalysis=new RouteAnalysis();
 //
 //        String route
 //
-//        routeAnalysis.getRouteDistance()
-//    }
+//        routeAnalysis.getRouteDistance();
+    }
 }
